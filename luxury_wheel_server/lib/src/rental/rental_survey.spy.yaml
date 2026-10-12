@@ -1,0 +1,10 @@
+class: RentalSurvey
+table: rental_survey
+fields:
+  authUserId: UuidValue
+  rating: int
+  feedback: String?
+  createdAt: DateTime, default=now
+indexes:
+  rental_survey_owner_created_idx:
+    fields: authUserId, createdAt

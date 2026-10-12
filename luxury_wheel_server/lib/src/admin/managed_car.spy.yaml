@@ -1,0 +1,24 @@
+class: ManagedCar
+table: managed_car
+fields:
+  companyId: int
+  branchId: int?
+  make: String
+  model: String
+  year: int
+  category: String
+  description: String?
+  plateNumber: String
+  color: String?
+  seats: int
+  dailyRate: int
+  status: String, default='available'
+  createdAt: DateTime, default=now
+indexes:
+  managed_car_company_idx:
+    fields: companyId
+  managed_car_branch_idx:
+    fields: branchId
+  managed_car_plate_unique_idx:
+    fields: plateNumber
+    unique: true

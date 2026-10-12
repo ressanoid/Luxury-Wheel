@@ -1,0 +1,12 @@
+class: RentalCompany
+table: rental_company
+fields:
+  ### Public-facing name of the rental partner.
+  name: String
+  logoUrl: String?
+  ### Primary contact details shown to administrators.
+  email: String?
+  phone: String?
+  ### Operational status used for dashboard filtering.
+  status: String, default='active'
+  createdAt: DateTime, default=now

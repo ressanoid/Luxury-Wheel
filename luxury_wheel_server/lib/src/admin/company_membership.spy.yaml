@@ -1,0 +1,13 @@
+class: CompanyMembership
+table: company_membership
+fields:
+  companyId: int
+  authUserId: UuidValue
+  role: String, default='manager'
+  createdAt: DateTime, default=now
+indexes:
+  company_membership_company_user_unique_idx:
+    fields: companyId, authUserId
+    unique: true
+  company_membership_user_idx:
+    fields: authUserId

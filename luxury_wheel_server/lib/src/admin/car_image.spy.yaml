@@ -1,0 +1,10 @@
+class: CarImage
+table: car_image
+fields:
+  carId: int
+  url: String
+  sortOrder: int, default=0
+  createdAt: DateTime, default=now
+indexes:
+  car_image_car_idx:
+    fields: carId

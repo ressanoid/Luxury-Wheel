@@ -1,0 +1,58 @@
+adminBootstrap:
+  - claimFirstAdmin:
+admin:
+  - isAdministrator:
+  - hasCompanyAccess:
+  - listCompanies:
+  - saveCompany:
+  - deleteCompany:
+  - listBranches:
+  - saveBranch:
+  - deleteBranch:
+  - listCars:
+  - saveCar:
+  - deleteCar:
+  - listCarImages:
+  - addCarImage:
+  - deleteCarImage:
+  - listOffers:
+  - saveOffer:
+  - deleteOffer:
+  - listCompanyMembers:
+  - assignCompanyUser:
+  - removeCompanyUser:
+  - listReservations:
+  - listSurveyFeedback:
+  - updateReservationStatus:
+  - proposeReservationChange:
+  - cancelReservation:
+  - bulkImportCars:
+  - bulkImportCarsWithReport:
+  - listUsers:
+  - updateUserAccess:
+  - restoreManagementData:
+  - exportManagementData:
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+  - hasAccount:
+jwtRefresh:
+  - refreshAccessToken:
+greeting:
+  - hello:
+rental:
+  - watchMarketplaceChanges:
+  - listCatalogCars:
+  - listActiveOffers:
+  - reserve:
+  - reserveWithPoints:
+  - myReservations:
+  - cancelMyReservation:
+  - respondToReservationChange:
+  - myPoints:
+  - submitSatisfactionSurvey:

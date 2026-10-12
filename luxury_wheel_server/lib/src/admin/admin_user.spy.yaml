@@ -1,0 +1,8 @@
+class: AdminUser
+fields:
+  authUserId: UuidValue
+  email: String?
+  fullName: String?
+  createdAt: DateTime
+  blocked: bool
+  isAdmin: bool

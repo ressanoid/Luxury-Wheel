@@ -1,0 +1,20 @@
+class: ManagedOffer
+table: managed_offer
+fields:
+  companyId: int?
+  sponsorName: String
+  sponsorImageUrl: String?
+  title: String
+  description: String
+  city: String?
+  discountType: String, default='percent'
+  discountValue: int
+  status: String, default='active'
+  startsAt: DateTime?
+  endsAt: DateTime?
+  createdAt: DateTime, default=now
+indexes:
+  managed_offer_company_idx:
+    fields: companyId
+  managed_offer_status_idx:
+    fields: status, startsAt, endsAt

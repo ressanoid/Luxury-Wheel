@@ -1,0 +1,9 @@
+class: CompanyMember
+fields:
+  companyId: int
+  companyName: String
+  authUserId: UuidValue
+  email: String?
+  fullName: String?
+  role: String
+  createdAt: DateTime

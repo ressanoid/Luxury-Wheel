@@ -1,0 +1,3 @@
+class: MarketplaceUpdate
+fields:
+  changedAt: DateTime

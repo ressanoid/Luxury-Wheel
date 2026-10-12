@@ -1,0 +1,13 @@
+class: Branch
+table: branch
+fields:
+  companyId: int
+  name: String
+  city: String
+  address: String
+  phone: String?
+  status: String, default='open'
+  createdAt: DateTime, default=now
+indexes:
+  branch_company_idx:
+    fields: companyId

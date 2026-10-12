@@ -1,0 +1,34 @@
+class: RentalReservation
+table: rental_reservation
+fields:
+  authUserId: UuidValue
+  bookingReference: String
+  carId: String
+  managedCarId: int?
+  carName: String
+  branchId: int?
+  branchName: String?
+  companyId: int?
+  companyName: String?
+  customerName: String?
+  customerEmail: String?
+  carImageUrl: String?
+  city: String
+  pickupDate: DateTime
+  returnDate: DateTime
+  totalPrice: int
+  pointsEarned: int
+  pointsRedeemed: int, default=0
+  pointsDiscount: int, default=0
+  status: String
+  statusReason: String?
+  adjustmentStatus: String, default='none'
+  adjustmentReason: String?
+  proposedPickupDate: DateTime?
+  proposedReturnDate: DateTime?
+  proposedTotalPrice: int?
+  zatcaInvoiceQrPayload: String?
+  createdAt: DateTime, default=now
+indexes:
+  rental_reservation_owner_created_idx:
+    fields: authUserId, createdAt
